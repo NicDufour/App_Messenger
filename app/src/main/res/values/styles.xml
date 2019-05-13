@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LayoutMainBlueThe" parent="FillParent">
+        <item name="android:background">@color/colorBlueMed</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="EditText_White" parent="WhiteText">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+    </style>
+
+    <style name="WhiteText">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BlueButtonLightTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextButton">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="imgLogoSub">
+        <item name="android:layout_width">295dp</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="FillParent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BlueButton" parent="WrapContent">
+        <item name="android:background">@drawable/button_blue_rounded</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="NoBackgroundButton" parent="WrapContent">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="LayoutFormSection">
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@color/colorBlueDark</item>
+    </style>
+
+    <style name="AdapterEditTextSubForm" parent="EditText_White">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="RadioButtonType1" parent="WrapContent">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="TextViewForm" parent="WhiteText">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="layoutLogSec" parent="WrapContent">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@color/colorBlueDark</item>
+    </style>
+
+    <style name="ImageViewLog">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="EditTextLog" parent="EditText_White">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">15dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.messenger">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_messenger"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_messenger_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Login_Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoadingAppActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity_Map.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".Services.TrackerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".AccountParameter_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Invitation.InvitationManager_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Activity_Friend.FriendManager_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Activity_Friend.AddNewFriend_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".Activity_ChatRoom.ChatRoom_Activity" />
+        <activity
+            android:name=".Subscription_Activity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Activity_ChatRoomList.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <service
+            android:name=".Services.TrackerService"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

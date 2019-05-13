@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="text_login">username</string>
+    <string name="text_password">Password</string>
+    <string name="btn_Login"> Login </string>
+    <string name="btn_subscription"> Subscription </string>
+    <string name="btn_create_account">Create new account</string>
+    <string name="btn_login_activiti">Log in</string>
+    <string name="btn_account">Profile Picture</string>
+    <string name="text_FirstName">First Name :</string>
+    <string name="text_LastName">Last name :</string>
+    <string name="text_mail">Email :</string>
+    <string name="text_password2">Password :</string>
+    <string name="select_men">Men</string>
+    <string name="text_switch_public">Private profile</string>
+    <string name="select_women">Women</string>
+    <string name="select_other">Other</string>
+    <string name="text_birthday">Birth Date</string>
+    <string name="text_username2">Username :</string>
+    <string name="btn_cancel"> Clear </string>
+    <string name="btn_save"> Save </string>
+    <string name="btn_reset_picture">No Picture</string>
+    <string name="btn_send"> Send </string>
+    <string name="convertation">Conversation with: </string>
+    <string name="friend_list">Friend List</string>
+    <string name="menue_logout">Log Out</string>
+    <string name="menu_info">Setting</string>
+    <string name="toast_invalid_field"> Invalid Fields !</string>
+    <string name="toast_password_matches">No Matches Password !</string>
+    <string name="toast_already_used">This Username Is Already used</string>
+    <string name="toast_fail_login">Invalid Password Or Username</string>
+    <string name="text_name">Name</string>
+    <string name="text_password_confirm">Confirm Password</string>
+    <string name="text_email">Email</string>
+    <string name="text_chat_room_name">Chat Room Name</string>
+    <string name="btn_add_friend">Send Invitation</string>
+    <string name="btn_cancel_friend">Cancel</string>
+    <string name="inv_send">Invitation Sended</string>
+    <string name="name_activity_send_invitation">Research User</string>
+    <string name="txt_recherche"> Recherche </string>
+    <string name="btn_view_friend">Friends List</string>
+    <string name="btn_view_invitation">Invitations</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_refuse">Refuse</string>
+    <string name="remove_validation">Do you want to remove this friend from your contacts?</string>
+    <string name="btn_delete">Delete Account</string>
+    <string name="btn_update">Save</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="chk_location">Share Location</string>
+    <string name="notification_text">Tracking, tap to cancel</string>
+    <string name="transport_id" translatable="false">123</string>
+    <string name="firebase_path" translatable="false">locations</string>
+    <string name="title_activity_display">Transport Display</string>
+    <string name="firebase_email" translatable="false">test@example.com</string>
+    <string name="firebase_password" translatable="false">password</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="activity_main">Conversations</string>
+    <string name="already_friend">Already Friend</string>
+    <string name="map_name">Friends Location</string>
+    <string name="no_conversation">No Conversation</string>
+    <string name="no_friend">No Friend</string>
+    <string name="setting">Settings</string>
+    <string name="no_invitation">No Invitation</string>
+    <string name="login_email">Email</string>
+    <string name="invitations">Invitations</string>
+    <string name="mod_name">Name :</string>
+    <string name="you">You : </string>
+</resources>

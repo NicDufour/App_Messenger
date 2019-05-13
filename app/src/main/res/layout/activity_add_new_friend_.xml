@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/acr"
+    android:isScrollContainer="false"
+    android:verticalScrollbarPosition="defaultPosition"
+    tools:context="com.example.messenger.Activity_ChatRoom.ChatRoom_Activity">
+
+    <LinearLayout
+        android:id="@+id/activity_mentor_chat_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:background="#1D4A5D"
+            android:windowSoftInputMode="adjustNothing">
+            <ImageButton
+                android:id="@+id/back_add_friend"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:background="@color/fui_transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:windowSoftInputMode="adjustNothing"
+                android:paddingLeft="5dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:windowSoftInputMode="adjustNothing"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="#FFFF"
+                    android:textSize="23sp"
+                    android:textStyle="italic"
+                    android:windowSoftInputMode="adjustNothing"
+                    android:text="@string/name_activity_send_invitation"
+                    android:textAlignment="center"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:windowSoftInputMode="adjustNothing"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <EditText android:id="@+id/inputSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:windowSoftInputMode="adjustNothing"
+                android:textColor="#111111"
+                android:background="@drawable/gray_rectangle_rounded"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:hint="Search"
+                android:textColorHint="#111111"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textVisiblePassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_mentor_chat_recycler_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:windowSoftInputMode="adjustNothing"
+        android:layout_above="@id/activity_mentor_chat_add_message_container"
+        android:layout_below="@id/activity_mentor_chat_buttons_container">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:windowSoftInputMode="adjustNothing"
+            android:orientation="vertical"
+            android:layout_weight="60">
+
+            <ListView
+                android:id="@+id/list_user_result"
+                android:layout_width="wrap_content"
+                android:windowSoftInputMode="adjustNothing"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/LayoutMainBlueThe"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                style="@style/WrapContent"
+                android:orientation="vertical"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp">
+
+                <ImageView
+                    style="@style/imgLogoSub"
+                    android:src="@drawable/app_logo_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WrapContent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/LayoutFormSection">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_name"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:fillViewport="true">
+
+                            <EditText
+                                style="@style/AdapterEditTextSubForm"
+                                android:textAlignment="center"
+                                android:hint="@string/text_name"
+                                android:id="@+id/name_edit"/>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LayoutFormSection">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_email"/>
+
+                        <HorizontalScrollView
+                            style="@style/FillParent"
+                            android:fillViewport="true">
+
+                            <EditText
+                                style="@style/AdapterEditTextSubForm"
+                                android:textAlignment="center"
+                                android:id="@+id/email_edit"
+                                android:hint="@string/text_email"
+                                android:inputType="textEmailAddress"/>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LayoutFormSection">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_password"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:fillViewport="true">
+
+                            <EditText
+                                style="@style/AdapterEditTextSubForm"
+                                android:inputType="textPassword"
+                                android:textAlignment="center"
+                                android:hint="@string/text_password"
+                                android:id="@+id/passeword_form_edit"/>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LayoutFormSection">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_password"/>
+
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:fillViewport="true">
+
+                            <EditText
+                                style="@style/AdapterEditTextSubForm"
+                                android:inputType="textPassword"
+                                android:hint="@string/text_password_confirm"
+                                android:textAlignment="center"
+                                android:id="@+id/passeword_confirm_form_edit"/>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="260dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp">
+                        <RadioGroup
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/radioGroup">
+                            <RadioButton
+                                style="@style/RadioButtonType1"
+                                android:id="@+id/radio_men"
+                                android:text="@string/select_men"
+                                android:checked="true"/>
+                            <RadioButton
+                                android:id="@+id/radio_women"
+                                style="@style/RadioButtonType1"
+                                android:text="@string/select_women"
+                                android:checked="false"/>
+                            <RadioButton
+                                android:id="@+id/radio_other"
+                                style="@style/RadioButtonType1"
+                                android:text="@string/select_other"
+                                android:checked="false"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        style="@style/WrapContent"
+                        android:gravity="center">
+                        <Button
+                            style="@style/BlueButton"
+                            android:text="@string/btn_save"
+                            android:id="@+id/btn_subscribe"
+                            android:layout_marginRight="20dp"
+                            />
+                        <Button
+                            style="@style/BlueButton"
+                            android:text="@string/btn_cancel"
+                            android:id="@+id/btn_cancel"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WrapContent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/NoBackgroundButton"
+                    android:id="@+id/btn_login"
+                    android:text="@string/btn_login_activiti" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

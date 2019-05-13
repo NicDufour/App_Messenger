@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_view_friend"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btn_open_invitation_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_view_invitation"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText android:id="@+id/inputSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:windowSoftInputMode="adjustNothing"
+                android:textColor="#111111"
+                android:background="@drawable/gray_rectangle_rounded"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:hint="Search"
+                android:textColorHint="#111111"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="textVisiblePassword" />
+
+            <ImageButton
+                android:id="@+id/btn_friend_activity_start_add_friend_activity"
+                android:layout_width="0dp"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_height="wrap_content"
+                android:background="@color/fui_transparent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20sp"
+            android:layout_weight="9">
+
+            <ListView
+                android:id="@+id/listview_friend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <include layout="@layout/footer"/>
+</LinearLayout>

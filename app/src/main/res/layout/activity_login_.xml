@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+    <LinearLayout
+        style="@style/FillParent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#1D4A5D">
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/WrapContent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="295dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/app_logo_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/layoutLogSec"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        style="@style/ImageViewLog"
+                        android:text="@string/text_login"
+                        android:src="@drawable/ic_email"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:fillViewport="true">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/email_edit"
+                            android:hint="@string/login_email"/>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutLogSec"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        style="@style/ImageViewLog"
+                        android:text="@string/text_login"
+                        android:src="@drawable/login"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:fillViewport="true">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:inputType="textPassword"
+                            android:id="@+id/password_edit"
+                            android:hint="@string/text_password"/>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/WrapContent"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp">
+                    <Button
+                        style="@style/BlueButton"
+                        android:text="@string/btn_Login"
+                        android:id="@+id/btn_login"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NoBackgroundButton"
+                android:id="@+id/btn_subscription"
+                android:text="@string/btn_create_account"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/border_top"
+    android:layout_margin="0dp"
+    android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:background="#f2f2f2">
+
+            <ImageButton
+                android:id="@+id/btn_map_activity"
+                android:src="@drawable/ic_map_black_24dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background = "@drawable/rectangle_point_left" />
+
+            <ImageButton
+                android:id="@+id/btn_chat_room"
+                android:src="@drawable/ic_chat_black_24dp"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:background = "@drawable/hexagon_shape"/>
+
+            <ImageButton
+                android:id="@+id/btn_friend_activity"
+                android:src="@drawable/ic_supervisor_account_black_24dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background = "@drawable/rectangle_point_right"/>
+
+        </LinearLayout>
+</RelativeLayout>
